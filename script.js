@@ -43,18 +43,23 @@ function setupSearch() {
 
 function searchCommands(query) {
     const container = document.getElementById('commandsContainer');
-    const results = [];
+    const nameMatches = [];
+    const descMatches = [];
+    const optionMatches = [];
 
-    // Cerca in tutti i comandi
     for (let letter in linuxCommands) {
         linuxCommands[letter].forEach(cmd => {
-            if (cmd.name.toLowerCase().includes(query) ||
-                cmd.description.toLowerCase().includes(query) ||
-                cmd.options.some(opt => opt.toLowerCase().includes(query))) {
-                results.push(cmd);
+            if (cmd.name.toLowerCase().includes(query)) {
+                nameMatches.push(cmd);
+            } else if (cmd.description.toLowerCase().includes(query)) {
+                descMatches.push(cmd);
+            } else if (cmd.options.some(opt => opt.toLowerCase().includes(query))) {
+                optionMatches.push(cmd);
             }
         });
     }
+
+    const results = [...nameMatches, ...descMatches, ...optionMatches];
 
     if (results.length === 0) {
         container.innerHTML = '<div class="no-results">Nessun comando trovato per: "' + query + '"</div>';
@@ -62,7 +67,7 @@ function searchCommands(query) {
     }
 
     // Ordina i risultati alfabeticamente
-    results.sort((a, b) => a.name.localeCompare(b.name));
+    //results.sort((a, b) => a.name.localeCompare(b.name));
 
     let html = '<div class="section-title">Risultati della ricerca (' + results.length + ')</div>';
     html += '<div class="commands-grid">';
