@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  dizionario-linux:
+    build: .
+    ports:
+      - "8080:80"
+    container_name: dizionario-linux
