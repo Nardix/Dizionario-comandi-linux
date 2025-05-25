@@ -1,6 +1,6 @@
 # 🐧 Dizionario dei comandi di Linux
 
-![Screenshot](assets\homepage.png)
+![Screenshot](assets/homepage.png)
 
 <div align="center">
 
