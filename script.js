@@ -1,3 +1,29 @@
+// Funzione per unire i comandi esistenti con quelli aggiuntivi
+function mergeCommands(existing, additional) {
+    const merged = { ...existing };
+
+    
+    for (const letter in additional) {
+        if (merged[letter]) {
+            merged[letter] = [...merged[letter], ...additional[letter]];
+        } else {
+            merged[letter] = additional[letter];
+        }
+    }
+    
+    return merged;
+}
+
+function sortCommandsByName(commandsObj) {
+    const sorted = {};
+    for (const letter in commandsObj) {
+        sorted[letter] = [...commandsObj[letter]].sort((a, b) => a.name.localeCompare(b.name));
+    }
+    return sorted;
+} 
+
+const linuxCommands = sortCommandsByName(mergeCommands(commands, moreLinuxCommands));
+
 let currentFilter = '';
 let activeSection = '';
 
