@@ -66,9 +66,6 @@ function searchCommands(query) {
         return;
     }
 
-    // Ordina i risultati alfabeticamente
-    //results.sort((a, b) => a.name.localeCompare(b.name));
-
     let html = '<div class="section-title">Risultati della ricerca (' + results.length + ')</div>';
     html += '<div class="commands-grid">';
 
