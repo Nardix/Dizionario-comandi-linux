@@ -1,5 +1,7 @@
 # 🐧 Dizionario Comandi Linux
 
+![Screenshot](assets\homepage.png)
+
 <div align="center">
 
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
@@ -8,7 +10,6 @@
 
 *Una guida completa ai comandi essenziali di Linux per sviluppatori e amministratori di sistema*
 
-[![Contributi benvenuti](https://img.shields.io/badge/contributi-benvenuti-brightgreen.svg?style=flat)](CONTRIBUTING.md)
 [![Licenza MIT](https://img.shields.io/badge/licenza-MIT-blue.svg)](LICENSE)
 
 </div>
@@ -20,6 +21,7 @@
 - [🔍 Panoramica](#-panoramica)
 - [📚 Categorie di Comandi](#-categorie-di-comandi)
 - [🚀 Come Utilizzare questa Guida](#-come-utilizzare-questa-guida)
+- [⬇️ Download e Installazione](#️-download-e-installazione)
 - [🤝 Contribuire](#-contribuire)
 - [📄 Licenza](#-licenza)
 
@@ -97,14 +99,14 @@ Gestione archivi e backup
 </tr>
 </table>
 
-## 🚀 Come Utilizzare questa Guida
+## 🚀 Come utilizzare questa Guida
 
 ### 📖 Struttura dei Comandi
 
 Ogni comando appare in questo modo:
 
 - **Nome del comando**
-- **Brve descrizione**
+- **Breve descrizione**
 - **lista di opzioni possibili**
 
 ### 🔎 Ricerca Rapida
@@ -119,6 +121,76 @@ Ogni comando appare in questo modo:
 - Inizia con i comandi base della sezione "Gestione File"
 - Usa `man comando` per accedere al manuale completo
 - Pratica in una macchina virtuale o container Docker
+
+## ⬇️ Download e Installazione
+
+### 🌐 Modalità 1: Utilizzo Locale (Raccomandato)
+
+#### 📥 **Step 1: Scarica il Progetto**
+
+```bash
+# Clona il repository
+git clone https://github.com/Nardix/Dizionario-comandi-linux.git
+
+# Entra nella directory
+cd Dizionario-comandi-linux
+```
+
+**Oppure scarica il ZIP:**
+1. Clicca sul pulsante verde `Code` → `Download ZIP`
+2. Estrai nella cartella desiderata
+
+#### 🚀 **Step 2: Avvia l'Applicazione**
+
+<table>
+<tr>
+<td width="50%">
+
+##### 🖱️ **Metodo Normale**
+- **Doppio click** su `index.html`
+- Il browser predefinito si aprirà automaticamente
+- Inizia subito a consultare i comandi!
+
+</td>
+<td width="50%">
+
+##### ⌨️ **Metodo da Terminale**
+```bash
+# Apri con il browser predefinito
+xdg-open index.html
+
+# Oppure specifica un browser
+firefox index.html
+google-chrome index.html
+```
+
+</td>
+</tr>
+</table>
+
+### 🐳 Modalità 2: Docker (Per Sviluppatori)
+
+#### 📦 **Dockerfile Incluso**
+
+```bash
+# Builda l'immagine Docker
+docker build -t linux-dictionary .
+
+# Avvia il container
+docker run -p 8080:80 linux-dictionary
+
+# Apri nel browser
+open http://localhost:8080
+```
+
+#### 🚀 **Docker Compose (One-liner)**
+
+```bash
+# Avvia con docker-compose
+docker-compose up -d
+
+# L'app sarà disponibile su http://localhost:8080
+```
 
 ## 🤝 Contribuire
 
