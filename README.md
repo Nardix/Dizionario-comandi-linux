@@ -18,6 +18,7 @@
 
 ## 📋 Indice
 
+- [🔗 Link](#-link)
 - [🔍 Panoramica](#-panoramica)
 - [📚 Categorie di Comandi](#-categorie-di-comandi)
 - [🚀 Come Utilizzare questa Guida](#-come-utilizzare-questa-guida)
@@ -27,9 +28,11 @@
 
 ---
 
-## 🔍 Panoramica
+## 🔗 Link
 
 il sito è disponibile a questo link: https://nardix.github.io/Dizionario-comandi-linux/
+
+## 🔍 Panoramica
 
 Questo repository contiene una collezione organizzata dei comandi Linux più utilizzati, con spiegazioni dettagliate ed esempi pratici. Perfetto per:
 
