@@ -1077,6 +1077,16 @@ const commands = {
             ]
         },
         {
+            name: 'xdg-open',
+            description: 'Apre file o URL con applicazione predefinita',
+            options: [
+                'xdg-open file : apre file con applicazione predefinita',
+                'xdg-open http://example.com : apre URL nel browser',
+                'xdg-open /path/to/directory : apre directory nel file manager',
+                'xdg-open index.html : apre file HTML nel browser'
+            ]
+        },
+        {
             name: 'xxd',
             description: 'Dump esadecimale',
             options: [
