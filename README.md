@@ -1,4 +1,4 @@
-# 🐧 Dizionario Comandi Linux
+# 🐧 Dizionario dei comandi di Linux
 
 <div align="center">
 
