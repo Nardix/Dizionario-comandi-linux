@@ -29,6 +29,8 @@
 
 ## 🔍 Panoramica
 
+il sito è disponibile a questo link: https://nardix.github.io/Dizionario-comandi-linux/
+
 Questo repository contiene una collezione organizzata dei comandi Linux più utilizzati, con spiegazioni dettagliate ed esempi pratici. Perfetto per:
 
 - 👨‍💻 **Sviluppatori** che vogliono padroneggiare il terminale
