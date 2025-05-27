@@ -18,6 +18,7 @@
 
 ## 📋 Indice
 
+- [🔗 Link](#-link)
 - [🔍 Panoramica](#-panoramica)
 - [📚 Categorie di Comandi](#-categorie-di-comandi)
 - [🚀 Come Utilizzare questa Guida](#-come-utilizzare-questa-guida)
@@ -26,6 +27,10 @@
 - [📄 Licenza](#-licenza)
 
 ---
+
+## 🔗 Link
+
+il sito è disponibile a questo link: https://nardix.github.io/Dizionario-comandi-linux/
 
 ## 🔍 Panoramica
 
