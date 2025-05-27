@@ -41,7 +41,7 @@ const commands = {
             description: 'Linguaggio di programmazione per elaborazione di testi',
             options: [
                 'awk \'{print $1}\' file : stampa la prima colonna',
-                'awk -F: \'{print $1}\' : usa : come separatore'
+                'awk -F: \'{print $1}\' : usa i due punti come separatore'
             ]
         }
     ],
